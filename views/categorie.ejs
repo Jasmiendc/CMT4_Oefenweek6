@@ -1,0 +1,31 @@
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <% for (var i = 0; i < categorieen.length; i++) { %>
+      <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+    <% } %>
+  </div>
+</div>
+
+<% include header %>
+
+
+<h2 class='kader'>Nieuwsitems voor de categorie <%- categorieen[id] %></h2>
+
+  <% for (var i = 0; i < items.length; i++) { %>
+    <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+      <section class='section-categorie'>
+          <h2>  <a class='wit' href=/items/<%- items[i].id %>><%- items[i].titel %></a>  </h2>
+          <img src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
+          <p> <%- items[i].datum %> </p>
+          <p>
+            <%- items[i].samenvatting %>
+          </p>
+          <p> - <%- items[i].auteur %></p>
+      </section>
+    <% } %>
+  <% } %>
+
+  <h2>
+  <a class='wit' href="#">Link naar Heroku APP</a>
+  </h2>

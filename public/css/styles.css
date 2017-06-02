@@ -1,0 +1,205 @@
+body {
+  font-family: helvetica;
+  width: 90%;
+  margin: 25px auto;
+  line-height: 1.4em;
+}
+
+section {
+  margin-top: 4em;
+  background-color: white;
+}
+
+.section-categorie{
+  border-bottom: 4px solid orange;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+p {
+  margin: 10px 0;
+  padding: 0.5em 1em 0em 1em;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+ul{
+  padding: 2em;
+  list-style: disc;
+}
+
+h1{
+  font-family: 'Bad Script', cursive;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+h2:hover{
+  background-color: orange;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-left: 25%;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    margin-left: 25%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.dropdown-content a {
+    color: black;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: orange;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.wit{
+  color: white;
+}
+
+.categoriekader{
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  width: 90%;
+  border-bottom: 4px solid orange;
+  border-top: 4px solid orange;
+}
+
+.kader{
+  border: 4px solid orange;
+  background-color: white;
+  color: black;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(200, 150, 0, 0.5);
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.boodschap{
+  font-weight: lighter;
+  color: orange;
+  padding-left: 1em;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.bericht{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.form-group{
+  margin: 1em;
+}
+
+.form-control{
+  border: 2px solid orange;
+  border-radius: 5px;
+  display: block;
+  padding: 1em;
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+textarea{
+  height: 10em;
+}
+
+#button{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border: 2px solid white;
+  margin-bottom: 3em;
+}
+
+#button:hover{
+  background-color: white;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.footer{
+  border-top: 4px solid orange;
+}

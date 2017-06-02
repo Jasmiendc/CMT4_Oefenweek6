@@ -1,0 +1,31 @@
+<% include header %>
+
+<p class='categoriekader'>
+  <%- item.categorieen %>
+</p>
+<section>
+
+    <h2>  <%- item.titel %>  </h2>
+    <div class="container">
+      <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+      <div class="overlay">
+        <div class="text">
+          <%- item.auteur %>
+          <br>
+          <%- item.datum %>
+        </div>
+      </div>
+    </div>
+
+
+    <p> <%- item.body %> </p>
+    <img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">
+    <img src="/img/<%- item.afbeeldingm %>" alt="<%- item.titel %>">
+
+</section>
+
+<br>
+  <a class="boodschap" href="/nieuwe-boodschap">Voeg als eerste een bericht toe!</a>
+<br></br>
+
+<% include footer %>

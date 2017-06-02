@@ -1,0 +1,37 @@
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <% for (var i = 0; i < categorieen.length; i++) { %>
+      <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+    <% } %>
+  </div>
+</div>
+
+<% include header %>
+
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+
+    <section>
+      <div class='categoriekader'>
+        <%- item.categorieen %>
+      </div>
+        <h2>  <a class='wit' href=/items/<%- item.id %>><%- item.titel %></a> </h2>
+        <div class="container">
+          <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+          <div class="overlay">
+            <div class="text">
+              <%- item.auteur %>
+              <br>
+              <%- item.datum %>
+            </div>
+          </div>
+        </div>
+        <p><%- item.samenvatting %></p>
+        <br>
+        <a class="boodschap" href="/nieuwe-boodschap">Voeg als eerste een bericht toe!</a>
+        <br><vr>
+    </section>
+    <% teller++;}); %>
+<br>
+<% include footer %>

@@ -1,0 +1,26 @@
+{
+  "name": "Vice",
+  "version": "1.0.0",
+  "description": "Mobiele nieuwssite",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "web",
+    "nieuws",
+    "technology",
+    "node",
+    "express"
+  ],
+  "author": "Jasmien De Clerck",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}
