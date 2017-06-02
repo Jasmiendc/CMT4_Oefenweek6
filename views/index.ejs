@@ -9,8 +9,13 @@
 
 <% include header %>
 
+<form class="zoeken" method="get" action="/zoeken">
+  <a class="boodschap" href="/zoeken"><label>zoek</label></a>
+  <input class="zoekfunctie2" type="text" placeholder="zoekterm" id='zoekterm' name='zoekterm'>
+</form>
+
   <% var teller = 1; %>
-  <% nieuws.forEach(function(item){ %>
+  <% tentoonstelling.forEach(function(item){ %>
 
     <section>
       <div class='categoriekader'>
@@ -28,10 +33,6 @@
           </div>
         </div>
         <p><%- item.samenvatting %></p>
-        <br>
-        <a class="boodschap" href="/nieuwe-boodschap">Voeg als eerste een bericht toe!</a>
-        <br><vr>
     </section>
     <% teller++;}); %>
-<br>
 <% include footer %>

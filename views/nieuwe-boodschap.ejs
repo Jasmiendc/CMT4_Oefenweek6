@@ -1,6 +1,6 @@
 <% include header %>
 
-<h2 class="bericht">Een nieuw bericht toevoegen</h2>
+<h2 class="bericht2">Een nieuw bericht toevoegen</h2>
 <form method="post" role="form">
   <div class="form-group">
     <label for="titel">Onderwerp</label>
@@ -14,5 +14,24 @@
     <input type="submit" value="Bericht verzenden" class="btn btn-primary" id='button'>
   </div>
 </form>
+
+
+<% if (bijdrages.length) { %>
+  <% bijdrages.forEach(function(bijdrage) { %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="text-muted pull-right">
+          <%= bijdrage.geplaatst %>
+        </div>
+        <p>Onderwerp:</p><p class='tekst'><%= bijdrage.titel %></p>
+      </div>
+      <div class="panel-body">
+        <p>Bericht:</p><p class='tekst'><%= bijdrage.boodschap %></p>
+      </div>
+    </div>
+  <% }) %>
+<% } else { %>
+    <p>Er zijn nog geen berichten. <a class="nieuwe-boodschap" href="/nieuwe-boodschap">Voeg als eerste een bericht toe!</a></p>
+<% } %>
 
 <% include footer %>

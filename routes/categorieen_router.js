@@ -4,7 +4,7 @@ var categorieen = express.Router();
 categorieen.get('/categorieen/:id', function(req, res) {
   res.render("categorie", {
       id: Number(req.params.id),
-      items: req.app.get('nieuwsFile').nieuws,
+      items: req.app.get('tentoonstellingFile').tentoonstelling,
       categorieen: req.app.get('categorieenFile').categorieen
   });
 });

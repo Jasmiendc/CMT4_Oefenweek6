@@ -156,13 +156,24 @@ a{
 }
 
 .boodschap{
-  font-weight: lighter;
-  color: orange;
-  padding-left: 1em;
+  background-color: orange;
+  padding: 1em;
   font-family: 'Bubbler One', sans-serif;
+  font-weight: 600;
+}
+
+.boodschap a{
+  color: white;
 }
 
 .bericht{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 2px solid orange;
+  padding: 1em;
+}
+
+.bericht2{
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -202,4 +213,57 @@ textarea{
 
 .footer{
   border-top: 4px solid orange;
+  margin-top: 1em;
+}
+
+.zoekfunctie{
+  display: block;
+  border: 2px solid orange;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.zoekfunctie2{
+  border: 2px solid orange;
+  padding: 1em;
+}
+
+.zoeken{
+  position: relative;
+  top: 2em;
+  left: 2em;
+}
+
+.panel{
+  border: 2px solid orange;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.panel-heading{
+  border-bottom: 1px solid black;
+}
+
+.text-muted{
+  background-color: orange;
+  color: white;
+  padding: 1em;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.panel-body{
+  height: 5em;
+}
+
+.tekst{
+  color: orange;
+}
+
+.nieuwe-boodschap{
+  color: orange;
+}
+
+.zoeken a{
+ background-color: white;
+ color: orange;
 }
